@@ -2,7 +2,8 @@ def call(String credentials) {
     echo "Starting Docker push process..."
     String dockerImage = env.DOCKER_IMAGE
     String image_to_tag = env.IMAGE_NAME 
-    echo "Using Docker image: ${dockerImage}"
+    echo "Using Docker cred: "
+    echo credentials
     script {
 //        withCredentials([usernamePassword(credentialsId: credentials, usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) { 
 //            sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin'
