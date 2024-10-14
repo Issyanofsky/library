@@ -7,7 +7,6 @@ def call(String credentials) {
 
             sh "docker tag ${image_to_tag} ${dockerImage}"
             sh "docker push ${dockerImage}"
-            echo "docker tag: ${image_to_tag} new image name: ${dockerImage}"  
             echo "The image has been pushed to DockerHub successfully!!"
         }
     }
