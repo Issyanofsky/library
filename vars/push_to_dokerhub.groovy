@@ -1,5 +1,4 @@
 def call(String credentials) { 
-// takes credentials and the image name from the pipline variable (DOCKER_IMAGE)
     echo "Starting Docker push process..."
     String dockerImage = env.DOCKER_IMAGE 
     echo "Using Docker image: ${dockerImage}"
