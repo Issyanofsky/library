@@ -5,7 +5,7 @@ def call(String dockerImage, String cresentials){
                         
       sh "docker tag devopstasksupdated_app ${dockerImage}"
       sh "docker push ${dockerImage}"
-      sh 'echo "The image as pushed to DockerHub Successfuly!!"'
+     
     }
   }
 }
