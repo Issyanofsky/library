@@ -7,7 +7,7 @@ def call(String credentials) {
 //            echo "Logging in to Docker Hub as: $DOCKER_USERNAME"
 //            sh "docker tag ${image_to_tag} ${dockerImage}"
 //            sh "docker push ${dockerImage}"
-            
+          echo "docker tag: ${image_to_tag} new image name: ${dockerImage}"  
           echo "The image has been pushed to DockerHub successfully!!"
         }
     }
